@@ -1,0 +1,116 @@
+/* basic elements */
+
+H1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+H2{
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+H3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 0;
+}
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e1e1e1;
+}
+
+.margin {
+  margin: 0.5% 1%;
+  padding: 1%
+}
+
+.tabs {
+    background-color: #ffffff;
+    padding: 0 12px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+/* Containers */
+#c_first_row{
+  height: 250px;
+}
+
+#c_title {
+  width: 20%;
+  height: 100%;
+  float: left;
+  overflow: auto;
+}
+
+#c_ld {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+
+.c_ld_sel {
+  width: 49%;
+  float: left;
+}
+
+#c_ld_sel_ds {
+    padding: 0 2% 2% 0
+}
+
+.log_opt{
+  float: left;
+  width: 98%;
+  overflow: auto;
+  padding: 1%;
+}
+
+#ld_log {
+  height: 54%;
+}
+
+#c_gl {
+  width: 37.5%;
+  height: 100%;
+  float: left;
+}
+
+#gl_log{
+  height: 81%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#c_tabs {
+  height: 500px;
+  width: 96%;
+  float: left;
+}
+
+.c_l3 {
+  width: 20%;
+  height: 420px;
+  padding: 1%;
+  overflow: auto;
+  float: left;
+}
+
+.c_plot {
+  width: 75%;
+  float: right;
+}
+
+.c_l4 {
+  padding: 10px 0 1px 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.input_prop {
+  padding: 0 0 10px 0;
+}
