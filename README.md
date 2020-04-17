@@ -29,6 +29,6 @@ In the project folder, run
 Click in the printed html link to open the application
 
 ## Downloading and loading the datasets
-The datates can be downloaded in the following [link](https://www.ufrgs.br/gimscop/repository/siso-viewer/datasets/).
+The datates can be downloaded from the following [link](https://www.ufrgs.br/gimscop/repository/siso-viewer/datasets/).
 
 Extract the datasets from the file and move the HDF5 files into the /data folder in the project root. The application will recognize these files automatcly after opening.
