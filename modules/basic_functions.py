@@ -12,9 +12,6 @@ div_log = {'max-height': '200px', 'overflow': 'auto', 'display': 'flex', 'flex-d
 
 
 # %% basic functions
-
-
-
 def allow_save_to_dataset(full, data_folder):
     save = []
     for d in full:
