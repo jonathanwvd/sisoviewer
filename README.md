@@ -1,10 +1,10 @@
 # SISO Viewer
 
-This tool aims to facility the development and testing of CPM techniques. By using the tool, researchers can verify weak points and work on modifications to improve the technique performance. The tool was internally coded in Python and was designed based on the experience of the authors on CPM techniques development.
+This application aims to facility the development and testing of CPM techniques. By using the tool, researchers can verify weak points and work on modifications to improve the technique performance. The tool was internally coded in Python and was designed based on the experience of the authors on CPM techniques development.
 
 Tutoria video, citation, about and others informations on https://www.ufrgs.br/gimscop/repository/siso-viewer/
 
-## Installation and run
+## Installing and running the application
 
 ### Requirements
 [Python 3.7](https://www.python.org/downloads/) or superior.
@@ -24,7 +24,7 @@ In the project folder, run
 
 Click in the printed html link to open the application
 
-## Downloading and load the datasets
+## Downloading and loading the datasets
 The datates can be downloaded in the following [link](https://www.ufrgs.br/gimscop/repository/siso-viewer/datasets/).
 
 Extract the datasets from the file and move the HDF5 files into the /data folder in the project root. The tool will recognize these files automatcly after opening.
