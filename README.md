@@ -17,7 +17,8 @@ Open Command Prompt (Windows users) or Terminar (Linux and macOS users), navegat
 
 `pip requirements.txt`
 
-> make sure Python is in Windows Path ([solution](https://datatofish.com/add-python-to-windows-path/)) 
+> Make sure Python is in Windows Path ([solution](https://datatofish.com/add-python-to-windows-path/)) 
+> We recommend to work with [Virtual Environment](https://realpython.com/python-virtual-environments-a-primer/).
 
 ### 3. Open the application
 In the project folder, run
