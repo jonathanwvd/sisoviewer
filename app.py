@@ -89,21 +89,25 @@ app.layout = html.Div([
             ),
 
             html.Div([
-                html.P(['SISO Viewer is a tool for SISO control loop data visualization and analyze. To get more '
-                        'information about the tool, please check ',
-                        html.A('our paper', href='https://www.ufrgs.br/gimscop/repository/siso-viewer/', target='_blank'),
+                html.P(['SISO Viewer is a tool for SISO control loop data visualization and analysis. ',
+                        'To get more information about the tool, please check our ',
+                        html.A('paper', href='https://www.ufrgs.br/gimscop/repository/siso-viewer/',
+                               target='_blank'),
                         ' and ',
                         html.A('video', href='http://www.youtube.com', target='_blank'), '. ',
-                        'The project is open-source and is hosted in our ',
-                        html.A('GitHub page', href='https://github.com/jonathanwvd/sisoviewer', target='_blank'), '. ',
-                        "Any suggestion, bug report, request for cooperation can be send to the authors' email."]),
+                        'For the latest updates, see our ',
+                        html.A('research group page', href='https://www.ufrgs.br/gimscop/repository/siso-viewer/',
+                               target='_blank'), '. ', html.Br(), html.Br(),
 
-                html.P(['Other links and information: ',
-                        html.A('citation', href='https://www.ufrgs.br/gimscop/wp-content/uploads/2020/03/citation.html', target='_blank'), ', ',
-                        html.A("GIMSCOP's Page", href='http://www.ufrgs.br/gimscop/',
-                               target='blank'), ', ',
-                        html.A('about', href='https://www.ufrgs.br/gimscop/wp-content/uploads/2020/03/about.html', target='_blank'), '.',
-                        ])
+                        'The project is hosted on ',
+                        html.A('GitHub', href='https://github.com/jonathanwvd/sisoviewer', target='_blank'), '. ',
+                        "Suggestion or bug report can be sent by this page", html.Br(), html.Br(),
+
+                        html.A('citation', href='https://www.ufrgs.br/gimscop/wp-content/uploads/2020/03/citation.html',
+                               target='_blank'), html.Br(),
+                        html.A('about', href='https://www.ufrgs.br/gimscop/wp-content/uploads/2020/03/about.html',
+                               target='_blank'),
+                        ]),
             ],
             ),
         ],
@@ -477,7 +481,6 @@ def update_measurements_dropdown(loop):
 
     # create dropdown options with the available measurements for all the required dropdowns
     return [[{'label': m, 'value': m} for m in measurements]] * 9
-
 
 
 # %% data processing

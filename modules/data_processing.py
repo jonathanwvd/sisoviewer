@@ -51,7 +51,7 @@ def medfilt(x, y, par):
 
 def filtfilt(x, y, par):
     from scipy.signal import butter, filtfilt
-    b, a = butter(par[0], par[1])
+    b, a = butter(par[0], par[1], par[2])
     y_pre = filtfilt(b, a, y)
     x_pre = x
     return x_pre, y_pre
