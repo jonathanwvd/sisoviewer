@@ -18,7 +18,7 @@ Download and extract the project repository or clone from GitHub page.
 ### 2. Download the libraries
 Open Command Prompt (Windows users) or Terminal (Linux and macOS users), navigate to the project folder and run
 
-`pip3 install -r requirements.txt`
+`pip install -r requirements.txt`
 
 > Make sure Python is in Windows Path ([solution](https://datatofish.com/add-python-to-windows-path/)) 
 
@@ -27,7 +27,7 @@ Open Command Prompt (Windows users) or Terminal (Linux and macOS users), navigat
 ### 3. Open the application
 In the project folder, run
 
-`python3 app.py`
+`python app.py`
 
 Click in the printed HTML link to open the application
 
