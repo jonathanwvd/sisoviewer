@@ -4,6 +4,9 @@ This application aims to facilitate the development and testing of CPM technique
 
 Tutorial video, citation, about and other information on https://www.ufrgs.br/gimscop/repository/siso-viewer/
 
+![alt text](https://raw.githubusercontent.com/jonathanwvd/sisoviewer/master/assets/screenshot.png "screeshot")
+
+
 ## Installing and running the application
 
 ### Requirements
