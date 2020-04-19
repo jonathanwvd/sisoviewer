@@ -4,8 +4,9 @@ import numpy as np
 import pandas as pd
 import scipy.io as sio
 import os
+from pathlib import Path
 
-path_name = 'jelali_huang'
+os.chdir(Path('data/data_conversion/jelali_huang_to_csv/'))
 
 # load data
 data = sio.loadmat('isdb10')
@@ -19,8 +20,10 @@ info_dict = {}
 for i in info:
     info_dict[i] = []
 
-if not os.path.isdir(path_name):
-    os.mkdir(path_name)
+if not os.path.isdir('jelali_huang'):
+    os.mkdir('jelali_huang')
+
+os.chdir(Path('jelali_huang'))
 
 # get industry type
 ind = data['cdata'][0][0].dtype.names
@@ -45,4 +48,4 @@ for ind_i, i in enumerate(ind):
 
         # save csv
         loop_name = ind_book[ind_i] + str(ind_l + 1)
-        df.to_csv(os.path.join(path_name, loop_name + '.csv'))
+        df.to_csv(loop_name + '.csv')
