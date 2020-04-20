@@ -31,7 +31,26 @@ In the project folder, run
 
 Click in the printed HTML link to open the application
 
-## Downloading and loading the dataset
-The dataset can be downloaded from the following [link](https://www.ufrgs.br/gimscop/repository/siso-viewer/datasets/).
+## Downloading and loading the datasets
+The datasets can be downloaded from the following [link](https://www.ufrgs.br/gimscop/repository/siso-viewer/datasets/).
 
 Extract the dataset from the file and move the HDF5 files into the /data folder in the project root. The application will recognize these files automatically after opening.
+
+### Downloadng and converting the datased provided by Jelali et al.
+This is a well-know dataset on CPM. To download the dataset, go to the [Jelali's book page](https://sites.ualberta.ca/~bhuang/Stiction-Book.htm). To convert the dataset to HDF5 format, move the _.mat_ file to the data/data_conversion/jelali_huang_to_csv folder and run (from the project root)
+
+`python data\data_conversion\jelali_huang_to_csv\mat_to_csv.py`
+
+`python data\data_conversion\run_conversion.py`
+
+and then move the _jelali_huang.h5_ file from the _root_ to the _data_ folder
+
+## Working with the tool
+1. **Load the data** - in the *Load data* section, select the dataset and the loop.
+2. **Plot and process the data** - in the *Data processing* section, select the sampling time, plot the data, select the range and apply data processing.
+3. **Analise the data and techniques** - in the *Time domain*, *Frequency domain*, *Correlation*, and *Parametric plot* sections, analise the data and CPM techniques.
+
+## Adding new functions
+New functions can be easily added to the tool. The 
+
+## Adding new datasets
