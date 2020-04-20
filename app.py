@@ -90,18 +90,13 @@ app.layout = html.Div([
 
             html.Div([
                 html.P(['SISO Viewer is a tool for SISO control loop data visualization and analysis. ',
-                        'To get more information about the tool, please check our ',
-                        html.A('paper', href='https://www.ufrgs.br/gimscop/repository/siso-viewer/',
-                               target='_blank'),
-                        ' and ',
-                        html.A('video', href='http://www.youtube.com', target='_blank'), '. ',
-                        'For the latest updates, see our ',
-                        html.A('research group page', href='https://www.ufrgs.br/gimscop/repository/siso-viewer/',
-                               target='_blank'), '. ', html.Br(), html.Br(),
+                        'To get more information about the tool, please check the ',
+                        html.A('SISO Viewer page', href='https://www.ufrgs.br/gimscop/repository/siso-viewer/',
+                               target='_blank'), '. ', html.Br(),
 
                         'The project is hosted on ',
                         html.A('GitHub', href='https://github.com/jonathanwvd/sisoviewer', target='_blank'), '. ',
-                        "Suggestion or bug report can be sent by this page", html.Br(), html.Br(),
+                        "Suggestion or bug report can be sent through this page", html.Br(), html.Br(),
 
                         html.A('citation', href='https://www.ufrgs.br/gimscop/wp-content/uploads/2020/03/citation.html',
                                target='_blank'), html.Br(),
