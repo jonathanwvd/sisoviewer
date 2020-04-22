@@ -1,7 +1,6 @@
 import pandas as pd
 import datetime as dt
 from pathlib import Path
-import os
 
 
 def csv_to_hdf(path, name, time_stamp=False, time_stamp_form='%Y-%m-%d %H:%M:%S:%f', read_only=True):
@@ -21,7 +20,6 @@ def csv_to_hdf(path, name, time_stamp=False, time_stamp_form='%Y-%m-%d %H:%M:%S:
     """
     # Path as a pathlib instance
     path = Path(path)
-    # os.chdir(path.parents[2])
 
     # read infos
     info = pd.read_excel(path / 'info.xlsx', index_col=0)
