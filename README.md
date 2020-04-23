@@ -75,9 +75,10 @@ CSV files by running the function *csv_to_hdf* in the *data/data_conversion/csv_
 file with the loops information must be provided.
 
 To write the default CSV and Excel files, check the Jelali's dataset example in folder *data/data_conversion/jelali_huang_to_csv/jelali_huang* after running the 
-command `python data\data_conversion\jelali_huang_to_csv\mat_to_csv.py` mentioned above.
+`python data\data_conversion\jelali_huang_to_csv\mat_to_csv.py` mentioned above.
 
-
+## Converting HDF5 into CSV
+To convert an HDF5 file into CSV files follow the example on `data/data_conversion\run_ceonversion.py`.
 
 ## References
 [1] JELALI, Mohieddine; HUANG, Biao (Ed.). **Detection and diagnosis of stiction in control loops: state of the art and advanced methods.** 
