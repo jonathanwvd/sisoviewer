@@ -15,9 +15,10 @@ div_log = {'max-height': '200px', 'overflow': 'auto', 'display': 'flex', 'flex-d
 def allow_save_to_dataset(full, data_folder):
     save = []
     for d in full:
-        hdf_data = pd.HDFStore(data_folder / d['value'])
+        hdf_data = pd.HDFStore(data_folder / d['value'], mode='r')
         if ~ hdf_data['general_info']['read_only'].values[0]:
             save.append(d)
+        hdf_data.close()
     return save
 
 

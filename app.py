@@ -14,6 +14,7 @@ import copy
 import modules
 
 # %% basic initial information
+log_disabled = True
 project_folder = Path.cwd()
 map_codes = {'-1': 'unknown', '-2': 'many', '-3': 'variable', '-4': 'anonymous'}
 loop_info_print = ['short description', 'industry', 'company', 'type of measurement', 'ts', 'integrating', 'normalised',
@@ -44,6 +45,8 @@ dp_plot_apply_opt = modules.basic_functions.function_name(modules.data_processin
 
 
 def to_log(message=None, default=None, par=None):
+    global general_log, general_log_collect
+
     if default is None:
         general_log_collect.append(message)
     else:
@@ -74,6 +77,8 @@ dropdown_style = {'width': '90%', 'float': 'left'}
 label_style = {'width': '10%', 'float': 'left', 'font-size': '1.5em'}
 
 app = dash.Dash(__name__)
+server = app.server
+
 app.title = 'SISO Viewer'
 
 # %% Layout
@@ -143,6 +148,7 @@ app.layout = html.Div([
             dcc.Interval(
                 id='lg_interval',
                 interval=500,  # update log each 0.5 second
+                disabled=log_disabled,
             ),
 
         ],
@@ -403,7 +409,12 @@ def update_ld_log(value):
         raise PreventUpdate
 
     global hdf_data, info
-    hdf_data = pd.HDFStore(data_folder / value)
+
+    # close before open new
+    if hdf_data is not None:
+        hdf_data.close()
+
+    hdf_data = pd.HDFStore(data_folder / value, mode='r')
     info = hdf_data['info']
 
     # get loop names
@@ -468,6 +479,7 @@ def update_measurements_dropdown(loop):
     if loop is None:
         raise PreventUpdate
 
+    global info
     info_loop_local = info.loc[info.index == loop]
 
     # get the available measurements
@@ -511,7 +523,7 @@ def update_plot_dp(click_plot, click_rg, click_ap, loop, ts, start, end, func, v
         raise PreventUpdate
 
     global dp_click_plot, dp_click_rg, dp_click_ap
-    global Ts, measurements, info_loop, info_general, x_start, x_end
+    global Ts, measurements, info_loop, info_general, x_start, x_end, hdf_data
     global data_processed, data_interp, data_range
 
     # if click on "plot original data"
