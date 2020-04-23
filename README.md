@@ -7,7 +7,14 @@ More information on https://www.ufrgs.br/gimscop/repository/siso-viewer/
 ![alt text](https://raw.githubusercontent.com/jonathanwvd/sisoviewer/master/assets/screenshot.png "screeshot")
 
 
-## Installing and running the application
+## Running the portable version (maybe not the latest version)
+
+The portable version includes all that is necessary to run the application (Python, libraries, and data). To run the portable version:
+1. [Download](https://www.ufrgs.br/gimscop/repository/siso-viewer/) and extract the *7zip* file.
+2. Run the *run_app.bat* file.
+3. Wait until the server is set up and paste `http://localhost:8050/` to your browser.
+
+## Installing and running the application (latest version)
 
 ### Requirements
 [Python 3.7](https://www.python.org/downloads/) or superior.
@@ -30,7 +37,7 @@ In the project folder, run
 
 `python app.py`
 
-Wait until the server is set up and paste `http://localhost:8000/` on your browser.
+Wait until the server is set up and paste `http://localhost:8050/` to your browser.
 
 ## Downloading and loading the datasets
 The datasets can be downloaded from the following [link](https://www.ufrgs.br/gimscop/repository/siso-viewer/datasets/).
