@@ -14,8 +14,7 @@ import copy
 import modules
 
 # %% basic initial information
-log_disabled = True
-project_folder = Path.cwd()
+log_disabled = False
 map_codes = {'-1': 'unknown', '-2': 'many', '-3': 'variable', '-4': 'anonymous'}
 loop_info_print = ['short description', 'industry', 'company', 'type of measurement', 'ts', 'integrating', 'normalised',
                    'year of origin', 'contributor', 'description']
@@ -25,7 +24,7 @@ fig_config = {'displaylogo': False,
                                   'resetScale2d', 'toggleSpikelines', 'toImage', 'sendDataToCloud']]}
 
 # find all datasets
-data_folder = project_folder / 'data'
+data_folder = Path('data')
 datasets = [f.name for f in list(data_folder.glob('*.h5'))]
 
 # dropdown to select the dataset
