@@ -46,14 +46,17 @@ Extract the datasets from the downloaded file and move the HDF5 files into the *
 The application will recognize these files automatically after rerunning.
 
 ### Downloading and converting the dataset provided by Jelali et al. [1] 
-This is a well-know dataset on CPM. To download the dataset, go to the [Jelali's book page](https://sites.ualberta.ca/~bhuang/Stiction-Book.htm). To convert the dataset to HDF5 format, move the _.mat_ file to the data/data_conversion/jelali_huang_to_csv folder and run (from the project root)
+This is a well-know dataset on CPM. To download the dataset, go to the [Jelali's book page](https://sites.ualberta.ca/~bhuang/Stiction-Book.htm). To convert the dataset to HDF5 format, move the _.mat_ file to the data/data_conversion/jelali_huang_to_csv folder.
+
+If using the portable version, run the run_jelali_conversion.bat file in the project root.
+If not, run (from the project root)
 
 ```
 python data\data_conversion\jelali_huang_to_csv\mat_to_csv.py
 python data\data_conversion\run_conversion.py
 ```
 
-and then move the _jelali_huang.h5_ file from the project root to the _data_ folder.
+Finnaly, move the _jelali_huang.h5_ file from the project root to the _data_ folder.
 
 ## Working with the application
 1. **Load the data** - in the *Load data* section, select the dataset and the loop.
