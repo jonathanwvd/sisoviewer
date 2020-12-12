@@ -3,8 +3,13 @@ Examples of inputs to run the conversions
 """
 
 # import local functions
+# the import below may require modification depending on where you are executing the code. 
+# the following commented lines will work if you are running from the folder of this file.
+# from csv2hdf import csv_to_hdf, new_dataset
+# from hdf2csv import hdf_to_csv
 from data.data_conversion.csv2hdf import csv_to_hdf, new_dataset
 from data.data_conversion.hdf2csv import hdf_to_csv
+
 
 # # conversion from csv to hdf5
 path = 'data/data_conversion/jelali_huang_to_csv/jelali_huang'
