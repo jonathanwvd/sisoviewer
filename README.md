@@ -2,10 +2,14 @@
 
 This application aims to facilitate the development and testing of CPM techniques. By using the application, researchers can verify techniques weak points and work on improvements. The application was entirely coded in Python and was designed based on the experience of the authors on CPM techniques development.
 
-More information on https://www.ufrgs.br/gimscop/repository/siso-viewer/
+More information on https://www.ufrgs.br/gimscop/repository/sisoviewer/
 
 ![alt text](https://raw.githubusercontent.com/jonathanwvd/sisoviewer/master/assets/screenshot.png "screeshot")
 
+If you used this app in your work, please cite:
+DAMBROS, Jônathan WV; TRIERWEILER, Jorge O.; FARENZENA, Marcelo. 
+INDUSTRIAL DATASETS AND A TOOL FOR SISO DATA VISUALIZATION AND ANALYSIS. 
+Computers & Chemical Engineering, p. 107198, 2020.
 
 ## Running the portable version (maybe not the latest version)
 
