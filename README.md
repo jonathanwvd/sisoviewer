@@ -7,6 +7,7 @@ More information on https://www.ufrgs.br/gimscop/repository/sisoviewer/
 ![alt text](https://raw.githubusercontent.com/jonathanwvd/sisoviewer/master/assets/screenshot.png "screeshot")
 
 If you used this app in your work, please cite:
+
 DAMBROS, Jônathan WV; TRIERWEILER, Jorge O.; FARENZENA, Marcelo. 
 INDUSTRIAL DATASETS AND A TOOL FOR SISO DATA VISUALIZATION AND ANALYSIS. 
 Computers & Chemical Engineering, p. 107198, 2020.
